@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #e3e3e3;
+  font-family: poppins;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #121fa0;
+}
+
+.calculadora {
+  height: 60%;
+  min-height: 80dvh;
+  max-height: 20rem;
+  width: 30%;
+  max-width: 500px;
+  min-width: 300px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 1rem;
+  background-color: #efefef;
+  box-shadow: 10px 10px 2px #090909;
+}
+.container-btn {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  height: 80%;
+  width: 80%;
+  gap: 0.5rem;
+}
+.btn {
+  width: 100%;
+  height: 100%;
+  box-shadow: 4px 2px 5px #090909;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.btn:hover {
+  background-color: #e1e1e1;
+  transition: 0.2s;
+}
+#igual {
+  background-color: #121f90;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+}
+#igual:hover {
+  background-color: #121fa0;
+}
+.pantalla {
+  width: 80%;
+  border-radius: 1rem;
+  height: 3rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: 2px 2px 2px #090909;
+  font-size: 1.5rem;
+  font-size: poppins;
+  font-weight: bold;
+  outline: none;
+  text-align: right;
+}
